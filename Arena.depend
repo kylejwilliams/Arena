@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1452131116 source:/home/kyle/projects/Arena/main.cpp
+	"Player.h"
+	"Utility.h"
+	"Buffer.h"
+
+1452110202 /home/kyle/projects/Arena/include/Player.h
+	"Entity.h"
+
+1452113570 /home/kyle/projects/Arena/include/Entity.h
+	<string>
+
+1452128393 /home/kyle/projects/Arena/include/Utility.h
+	<string>
+	<sstream>
+
+1452110522 source:/home/kyle/projects/Arena/src/Entity.cpp
+	"Entity.h"
+
+1452110224 source:/home/kyle/projects/Arena/src/Player.cpp
+	"Player.h"
+
+1452128393 source:/home/kyle/projects/Arena/src/Utility.cpp
+	"Utility.h"
+	<iostream>
+
+1452130921 /home/kyle/projects/Arena/include/Buffer.h
+	"Utility.h"
+	<iostream>
+	<string>
+	<cstdlib>
+
+1452130795 source:/home/kyle/projects/Arena/src/Buffer.cpp
+	"Buffer.h"
+
