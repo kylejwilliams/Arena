@@ -5,7 +5,6 @@
 		<Option title="Arena" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="src/;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/Arena" prefix_auto="1" extension_auto="1" />
@@ -22,11 +21,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Buffer.h" />
 		<Unit filename="include/Entity.h" />
-		<Unit filename="main.cpp">
-			<Option virtualFolder="src/" />
-		</Unit>
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/Utility.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Buffer.cpp" />
 		<Unit filename="src/Entity.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Utility.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
