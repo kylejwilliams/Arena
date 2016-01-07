@@ -74,3 +74,17 @@ string Buffer::wordWrap(string text, int bufferWidth)
 
     return text;
 }
+
+void Buffer::displayMaze(Maze maze)
+{
+    for (int row = 0; row < maze.getHeight(); row++)
+    {
+        for (int col = 0; col < maze.getWidth(); col++)
+        {
+//            Buffer::append(maze.getGridElement(row, col).getSymbol());
+        }
+        Buffer::append("\n");
+        Buffer::display();
+        Buffer::clearBuffer();
+    }
+}

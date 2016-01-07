@@ -10,12 +10,12 @@ void Cell::setState(State state)
 {
     Cell::state = state;
 
-    if (state == blank)
-        Cell::symbol = " ";
+    if (state == wall)
+        Cell::symbol = "#";
     else if (state == floor)
         Cell::symbol = ".";
     else
-        Cell::symbol = "#";
+        Cell::symbol = " ";
 
 }
 

@@ -7,7 +7,7 @@ using namespace std;
 enum State {
     blank,
     floor,
-    ceiling
+    wall
 };
 
 

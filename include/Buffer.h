@@ -2,6 +2,7 @@
 #define BUFFER_H
 
 #include "Utility.h"
+#include "Maze.h"
 
 #include <iostream>
 #include <string>
@@ -22,6 +23,7 @@ class Buffer
         void setBufferWidth(int bw);
         int getBufferWidth();
         string wordWrap(string text, int bufferWidth);
+        void displayMaze(Maze maze);
     protected:
     private:
         string buffer;              // holds text waiting to be displayed to the console
