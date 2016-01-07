@@ -22,12 +22,16 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Buffer.h" />
+		<Unit filename="include/Cell.h" />
 		<Unit filename="include/Entity.h" />
+		<Unit filename="include/Maze.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="include/Utility.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Buffer.cpp" />
+		<Unit filename="src/Cell.cpp" />
 		<Unit filename="src/Entity.cpp" />
+		<Unit filename="src/Maze.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Utility.cpp" />
 		<Extensions>

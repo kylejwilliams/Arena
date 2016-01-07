@@ -81,7 +81,7 @@ void Buffer::displayMaze(Maze maze)
     {
         for (int col = 0; col < maze.getWidth(); col++)
         {
-//            Buffer::append(maze.getGridElement(row, col).getSymbol());
+            Buffer::append(maze.getGrid()[row][col].getSymbol());
         }
         Buffer::append("\n");
         Buffer::display();
