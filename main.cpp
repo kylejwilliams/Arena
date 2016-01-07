@@ -11,5 +11,7 @@ int main()
     Buffer buffer(79);
     Maze maze(50, 20);
 
+    maze.generateMaze();
     buffer.displayMaze(maze);
+
 }

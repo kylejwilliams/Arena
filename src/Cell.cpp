@@ -14,7 +14,7 @@ void Cell::setState(State state)
         Cell::symbol = "#";
     else if (state == floor)
         Cell::symbol = ".";
-    else
+    else if (state == blank)
         Cell::symbol = " ";
 
 }
