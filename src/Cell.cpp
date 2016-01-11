@@ -3,7 +3,7 @@
 Cell::Cell()
 {
     Cell::state = blank;
-    Cell::symbol = ".";
+    Cell::symbol = " ";
 }
 
 void Cell::setState(State state)
@@ -11,11 +11,13 @@ void Cell::setState(State state)
     Cell::state = state;
 
     if (state == wall)
-        Cell::symbol = "#";
+        Cell::symbol = "8";
     else if (state == floor)
-        Cell::symbol = ".";
+        Cell::symbol = " . ";
     else if (state == blank)
-        Cell::symbol = " ";
+        Cell::symbol = "   ";
+    else if (state == border)
+        Cell::symbol = "#";
 
 }
 

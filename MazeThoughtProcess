@@ -1,0 +1,35 @@
+#.######## // Notice that E is invalid, because it is surrounded by a corner
+#.#      # // of floors (The BCD in the bottom-left corner). Since there is
+##  ##   # // still valid paths available, we must select a new path from
+#  #DE#  # // among them.
+#  #CB#  #
+#####A####
+
+#X######## // Notice the Q is invalid. This time, there is no valid path
+#X# #QPON# // available and A does not connect to the end, we must mark this
+## #EFG#M# // cell as invalid, and go back to the previous cell in the path
+#  #D#H#L# // (In this case, P). This process continues until there is a 
+#  #CBIJK# // valid path available.
+#####A####
+
+#J######## // The beginning and end finally connect, so the maze is solvable.
+#IHGF#   # // There is still quite a bit of empty cells, so now we must go 
+####E#   # // back and fill them. Notice that because we set each floor cell 
+#  #D#   # // to have all of it's non-floor neighbor cells to walls, it
+#  #CB#  # // follows that we can check if any walls have a blank neighbor.
+#####A#### // If so, we can start a new path from that location.
+
+#.######## // All cells have now been filled - the maze is complete!
+#....#GHI# 
+####.EF### 
+##BA.##L## 
+#DC#..JK## 
+#####.#### 
+
+
+#@######## 
+#....#...# 
+####...### 
+##...##.## 
+#..#....## 
+#####@####
