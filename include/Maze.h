@@ -5,9 +5,10 @@
 #include <ctime>
 #include <cstdlib>
 #include <iostream>
-using namespace std;
 
 #include "Cell.h"
+
+using namespace std;
 
 class Maze
 {
@@ -17,8 +18,6 @@ class Maze
         void setWidth(int width);
         int getHeight();
         void setHeight(int height);
-        vector< vector<Cell> > getGrid();
-        void generateMaze();
     protected:
     private:
         int width;
